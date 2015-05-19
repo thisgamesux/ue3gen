@@ -1,0 +1,41 @@
+------------------
+-- GObjObjects
+------------------
+
+!! SNIP !!
+
+.text:0042CCDF                 mov     eax, GObjObjects
+.text:0042CCE4                 mov     eax, [eax+edi*4]
+.text:0042CCE7                 mov     ecx, [eax+8]
+.text:0042CCEA                 and     dword ptr [eax+0Ch], 0FFFFFFE7h
+.text:0042CCEE                 mov     [eax+8], ecx
+
+!! SIG !!
+
+83 60 0C E7
+
+!! PURE !!
+
+Found Address - 0x0A
+
+------------------
+-- GNames
+------------------
+
+!! SNIP !!
+
+.text:00D8425D                 push    804h            ; Size
+.text:00D84262                 lea     edx, [ebp+Dst]
+.text:00D84268                 push    edi             ; Val
+.text:00D84269                 push    edx             ; Dst
+.text:00D8426A                 mov     [ebp+OutputString], di
+.text:00D84271                 call    memset
+
+!! SIG !!
+
+68 04 08 00 00
+68 04 08 00 00 8D ? ? F7 FF FF
+
+!! PURE !!
+
+Unknown, fix it...

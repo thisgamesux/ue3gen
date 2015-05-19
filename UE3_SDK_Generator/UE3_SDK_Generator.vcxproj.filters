@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\SDK">
+      <UniqueIdentifier>{ce434cd7-351e-485e-a8d8-fa55f918ecd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gen">
+      <UniqueIdentifier>{6a30b227-1c5c-4741-bd8c-4973db43d946}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App">
+      <UniqueIdentifier>{9f21f1e1-e614-48c2-a01c-45c06e3126fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\SDK">
+      <UniqueIdentifier>{b96e3419-dad8-4108-9a77-babbc6753a38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Gen">
+      <UniqueIdentifier>{94e38ae2-9b90-41f3-a3fc-2061b579d203}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\App">
+      <UniqueIdentifier>{e56b48ff-991f-4cc3-8346-57e9452ec7fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Git">
+      <UniqueIdentifier>{5bacf5c4-65fc-4514-9687-487e7ad9a700}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UE3_SDK_Generator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK_Main.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="App.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK_Main.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="App.h">
+      <Filter>Header Files\App</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.gitignore">
+      <Filter>Git</Filter>
+    </None>
+    <None Include="..\LICENSE">
+      <Filter>Git</Filter>
+    </None>
+    <None Include="..\README.md">
+      <Filter>Git</Filter>
+    </None>
+  </ItemGroup>
+</Project>
